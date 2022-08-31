@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="page2.css" />
+      <script src="https://kit.fontawesome.com/7531243322.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   </head>
+   <title>Static Template</title>
+   </head>
+   <body>
+      <!-- top navigation bar -->
+      <nav class="navigation-bar">
+         <!--This div contains the logo and title of the page-->
+         <div class="title-combo">
+            <div class="website-logo">
+               <img src="images/spotify.jpeg">
+            </div>
+            <div class="website-name">
+               <h2>
+                  Music Player
+               </h2>
+            </div>
+         </div>
+         <!-- this is the animated favourites text -->
+         <div class="favs">
+            <h4>
+               Favourites
+            </h4>
+         </div>
+         <!-- this is for search bar -->
+         <div class="search-bar">
+            <div>
+               <!-- magnifying glass- search icon -->
+               <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+               <!-- mic icon -->
+               <i class="fas fa-microphone mic-ico"></i>
+            </div>
+         </div>
+         <!-- this is for notification bell -->
+         <div class="notification-bell">
+            <img src="images/bell.jpeg"> Notifications
+         </div>
+         <!-- this is for profile picture -->
+         <div class="profile-picture">
+            <img src="images/prof.jpeg">
+         </div>
+      </nav>
+<!-- Hamburger Navigation Bar -->
+<label  for="ham-trigger" id="ham-label">
+
+   <input type="checkbox" class="ham-trigger-checkbox" id="ham-trigger">
+   <div class="hamburger-icon">
+      <i class="fa-solid fa-bars"></i>
+   </div>
+   <nav class="hamburger-nav">
+
+      <div class="ham-title">
+        <div class="ham-brand-name">
+          <h2>Music Player</h2>
+        </div>
+      </div>
+
+      <div class="ham-profile">
+        <button class="ham-profile-button">
+          <img src="images/prof.jpeg" alt="Profile-Photo">
+        </button>
+      </div>
+
+      <div class="ham-favourites">
+        <button class="ham-fav-button">
+          <h1>Favourites</h1>
+        </button>
+      </div>
+
+      <div class="ham-search">
+
+        <div class="ham-search-icon">
+          <button class="ham-search-icon-button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <input type="text" placeholder="Search">
+
+        <div class="ham-search-microphone">
+          <button class="ham-search-microphone-button" type="submit">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+  </label>
+
+
+
+<!-- main section starts here -->
+
+      <main>
+         <aside id="as1">
+            <div class="aside-section1">
+               <div class="cover">
+                  <div class="cover-img">
+                     <img src="images/taycover.jpeg">
+                  </div>
+                  <div class="inner-div">
+                     <div class="heading-div">
+                        <span>Taylor Swift</span>
+                        <br> 
+                        <span> English Artist </span>
+                        <span id="follower"> 851 followers</span>
+                     </div>
+                     <div class="content">
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint maiores, corporis eligendi ut reprehenderit omnis quae.
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Imtium aliquam quidem nisi.
+                        </p>
+                        <button id="play-btn" type="button">Play All</button>
+                        <button id="cls-btn" type="button">Follow</button><br>
+                        <span style="margin-left:10px">247 Tracks| 98 Albums</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="list">
+                  <div class="list-inside">
+                     <span>01</span>
+                     <div class="list-img">
+                        <img src="images/cardigan.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Cardigan
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                  <div class="list-inside">
+                     <span>02</span>
+                     <div class="list-img">
+                        <img src="images/red.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Red
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                  <div class="list-inside">
+                     <span>03</span>
+                     <div class="list-img">
+                        <img src="images/red2.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Love Story
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                  <div class="list-inside">
+                     <span>04</span>
+                     <div class="list-img">
+                        <img src="images/per.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Willow
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                  <div class="list-inside">
+                     <span>05</span>
+                     <div class="list-img">
+                        <img src="images/bad.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Bad Blood
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                  <div class="list-inside">
+                     <span>06</span>
+                     <div class="list-img">
+                        <img src="images/red2.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Love Story
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                  <div class="list-inside">
+                     <span>07</span>
+                     <div class="list-img">
+                        <img src="images/per.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Willow
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                  <div class="list-inside">
+                     <span>08</span>
+                     <div class="list-img">
+                        <img src="images/bad.jpeg">
+                     </div>
+                     <div class="list-text">
+                        Bad Blood
+                     </div>
+                     <div class="list-icon1">
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="list-icon2">
+                        <i class="fa-solid fa-plus"></i>
+                     </div>
+                  </div>
+                 
+               
+            </div>
+         </aside>
+         <!-- This is the second aside section -->
+         <aside id="as2">
+            <div class="aside-section2">
+               <div class="similar-artist">
+                  <div class="item-heading">
+                  <div class="headin">Similar Artist</div>
+                  <div class="headin2">view all</div>
+                  </div>
+                  <div class="item">
+                     <span class="numspan">01</span>
+                     <div class="item-image">
+                        <img src="images/bts3.jpeg">
+                     </div>
+                     <div class="item-text">
+                        <b>BTS</b>
+                        
+                     </div>
+                     <div class="item-btn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                   </div>
+                   <div class="item">
+                     <span class="numspan">02</span>
+                     <div class="item-image">
+                        <img src="images/chen.jpeg">
+                     </div>
+                     <div class="item-text">
+                        <b>Chen</b>
+                        
+                     </div>
+                     <div class="item-btn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                   </div>
+                   <div class="item">
+                     <span class="numspan">03</span>
+                     <div class="item-image">
+                        <img src="images/black.jpeg">
+                     </div>
+                     <div class="item-text">
+                        <b>Blackpink</b>
+                        
+                     </div>
+                     <div class="item-btn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                   </div>
+                   <div class="item">
+                     <span class="numspan">04</span>
+                     <div class="item-image">
+                        <img src="images/coldplay.jpeg">
+                     </div>
+                     <div class="item-text">
+                        <b>ColdPlay</b>
+                        
+                     </div>
+                     <div class="item-btn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                   </div>
+                   <div class="item">
+                     <span class="numspan">05</span>
+                     <div class="item-image">
+                        <img src="images/od.jpeg">
+                     </div>
+                     <div class="item-text">
+                        <b>One Direction</b>
+                        
+                     </div>
+                     <div class="item-btn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                   </div>
+               </div>
+               <!-- recently played section -->
+               <div class="recently-played">
+                  <div class="item-heading">
+                     <div class="headinR">Recently Played</div>
+                     <div class="headin2">view all</div>
+                     </div> 
+                     <div class="ritem">
+                        <span class="numspan">01</span>
+                        <div class="rimage">
+                           <img src="images/magic.jpeg">
+                        </div>
+                        <div class="rtext">
+                           <b>Magic Shop</b>
+                           <br>Bts
+                        </div>
+                        <div class="rbtn">
+                           <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <div class="ritem">
+                        <span class="numspan">02</span>
+                        <div class="rimage">
+                           <img src="images/everytime.jpeg">
+                        </div>
+                        <div class="rtext">
+                           <b>Everytime</b>
+                           <br>Chen
+                        </div>
+                        <div class="rbtn">
+                           <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <div class="ritem">
+                        <span class="numspan">03</span>
+                        <div class="rimage">
+                           <img src="images/eupho.jpeg">
+                        </div>
+                        <div class="rtext">
+                           <b>Euphoria</b>
+                           <br>JK
+                        </div>
+                        <div class="rbtn">
+                           <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <div class="ritem">
+                        <span class="numspan">04</span>
+                        <div class="rimage">
+                           <img src="images/perfect.jpeg">
+                        </div>
+                        <div class="rtext">
+                           <b>Perfect</b>
+                           <br>Ed Sherran
+                        </div>
+                        <div class="rbtn">
+                           <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div> 
+                      <div class="ritem">
+                        <span class="numspan">05</span>
+                        <div class="rimage">
+                           <img src="images/nc.jpeg">
+                        </div>
+                        <div class="rtext">
+                           <b>Night Changes</b>
+                           <br>One Direction
+                        </div>
+                        <div class="rbtn">
+                           <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div> 
+                      <div class="ritem">
+                        <span class="numspan">06</span>
+                        <div class="rimage">
+                           <img src="images/kesar.jpeg">
+                        </div>
+                        <div class="rtext">
+                           <b>Kesariya</b>
+                           <br>Arijit Singh
+                        </div>
+                        <div class="rbtn">
+                           <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>       
+               </div>
+               
+            </div>
+         </aside>
+      </main>
+   </body>

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="styles.css" />
+      <script src="https://kit.fontawesome.com/7531243322.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   </head>
+   <title>Static Template</title>
+   </head>
+   <body>
+      <!-- top navigation bar -->
+      <nav class="navigation-bar">
+         <!--This div contains the logo and title of the page-->
+         <div class="title-combo">
+            <div class="website-logo">
+               <img src="images/spotify.jpeg">
+            </div>
+            <div class="website-name">
+               <h2>
+                  Music Player
+               </h2>
+            </div>
+         </div>
+         <!-- this is the animated favourites text -->
+         <div class="favs">
+            <h4>
+               Favourites
+            </h4>
+         </div>
+         <!-- this is for search bar -->
+         <div class="search-bar">
+            <div>
+               <!-- magnifying glass- search icon -->
+               <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+               <!-- mic icon -->
+               <i class="fas fa-microphone mic-ico"></i>
+            </div>
+         </div>
+         <!-- this is for notification bell -->
+         <div class="notification-bell">
+            <img src="images/bell.jpeg"> Notifications
+         </div>
+         <!-- this is for profile picture -->
+         <div class="profile-picture">
+            <img src="images/prof.jpeg">
+         </div>
+      </nav>
+
+     <!-- Hamburger Navigation Bar -->
+     <label  for="ham-trigger" id="ham-label">
+
+      <input type="checkbox" class="ham-trigger-checkbox" id="ham-trigger">
+      <div class="hamburger-icon">
+         <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="hamburger-nav">
+
+         <div class="ham-title">
+           <div class="ham-brand-name">
+             <h2>Music Player</h2>
+           </div>
+         </div>
+ 
+         <div class="ham-profile">
+           <button class="ham-profile-button">
+             <img src="images/prof.jpeg" alt="Profile-Photo">
+           </button>
+         </div>
+ 
+         <div class="ham-favourites">
+           <button class="ham-fav-button">
+             <h1>Favourites</h1>
+           </button>
+         </div>
+ 
+         <div class="ham-search">
+ 
+           <div class="ham-search-icon">
+             <button class="ham-search-icon-button" type="submit">
+               <i class="fa-solid fa-magnifying-glass"></i>
+             </button>
+           </div>
+ 
+           <input type="text" placeholder="Search">
+ 
+           <div class="ham-search-microphone">
+             <button class="ham-search-microphone-button" type="submit">
+               <i class="fa-solid fa-microphone"></i>
+             </button>
+           </div>
+ 
+         </div>
+       </nav>
+ 
+     </label>
+
+
+
+
+
+
+      <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+      <main>
+      <!-- aside section 1 -->
+      <aside class="aside section-1">
+         <!-- this is for the carousel -->
+         <div class="outer-carousel">
+            <div class="carousel">
+               <!-- these are the 3 images in the carousel -->
+               <img src="images/type1.jpeg">
+               <img src="images/type2.jpeg">
+               <img src="images/type3.jpeg">
+            </div>
+         </div>
+
+
+         <!-- this is the latest release section -->
+         <div class="latest-release">
+            <h1 style="margin-bottom: 12px;">
+               Latest Release
+            </h1>
+            <!-- this is the content of the latest release section -->
+            <!-- it will contain the "cards" -->
+            <div class="latest-release-content">
+               <div class="left-part">
+                  <div class="box">
+                     <div class="box-img">
+                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/willoww.jpeg">
+                     </div>
+                     <div class="description">
+                        <b>willow</b>
+                        <br>taylor swift
+                     </div>
+                     <div class="options-button">
+                        <div class="options">
+                           <i class="fa-solid fa-ellipsis-vertical"></i>
+                           <div class="latest-release-dropdown  margin-lr" id="latest-id">
+                              <div class="drop-item">
+                                 <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                 <span id="dropicon"><i class="fas fa-play-circle "></i></span>
+                                 <p>PlayNow</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-list-ul dropicon" ></i></span>
+                                 <p> Add to Queue</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-music dropicon"></i></span>
+                                 <p> Add to playlist</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-info-circle dropicon"></i></span>
+                                 <p> Get Info</p>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="timing">4.22</span>
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div class="box-img">
+                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/kesar.jpeg">
+                     </div>
+                     <div class="description">
+                        <b>Kesariya</b>
+                        <br>Arijit Singh
+                     </div>
+                     <div class="options-button">
+                        <div class="options">
+                           <i class="fa-solid fa-ellipsis-vertical"></i>
+                           <div class="latest-release-dropdown  margin-lr" id="latest-id">
+                              <div class="drop-item">
+                                 <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                 <span id="dropicon"><i class="fas fa-play-circle "></i></span>
+                                 <p>PlayNow</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-list-ul dropicon" ></i></span>
+                                 <p> Add to Queue</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-music dropicon"></i></span>
+                                 <p> Add to playlist</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-info-circle dropicon"></i></span>
+                                 <p> Get Info</p>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="timing">4.22</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="right-part">
+                  <div class="box">
+                     <div class="box-img">
+                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/cardigan.jpeg">
+                     </div>
+                     <div class="description">
+                        <b>Cardigan</b>
+                        <br>taylor swift
+                     </div>
+                     <div class="options-button">
+                        <div class="options">
+                           <i class="fa-solid fa-ellipsis-vertical"></i>
+                           <div class="latest-release-dropdown  margin-lr" id="latest-id">
+                              <div class="drop-item">
+                                 <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                 <span id="dropicon"><i class="fas fa-play-circle "></i></span>
+                                 <p>PlayNow</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-list-ul dropicon" ></i></span>
+                                 <p> Add to Queue</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-music dropicon"></i></span>
+                                 <p> Add to playlist</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-info-circle dropicon"></i></span>
+                                 <p> Get Info</p>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="timing">4.22</span>
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div class="box-img">
+                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                        <img src="images/red.jpeg">
+                     </div>
+                     <div class="description">
+                        <b>Red</b>
+                        <br>taylor swift
+                     </div>
+                     <div class="options-button">
+                        <div class="options">
+                           <i class="fa-solid fa-ellipsis-vertical"></i>
+                           <div class="latest-release-dropdown  margin-lr" id="latest-id">
+                              <div class="drop-item">
+                                 <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                 <span id="dropicon"><i class="fas fa-play-circle "></i></span>
+                                 <p>PlayNow</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-list-ul dropicon" ></i></span>
+                                 <p> Add to Queue</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-music dropicon"></i></span>
+                                 <p> Add to playlist</p>
+                              </div>
+                              <hr>
+                              <div class="drop-item">
+                                 <span id="dropicon"><i class="fas fa-info-circle dropicon"></i></span>
+                                 <p> Get Info</p>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="timing">4.22</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- !-- this is the popular artists section --> 
+         <div class="popular-artists">
+            <!-- this is the heading of popular artists section -->
+            <div id="popular-artist-heading">
+               <h1 style="margin-bottom: 12px; display: block;">
+                  Popular Artists
+               </h1>
+            </div>
+            <div class="popular-conent">
+               <div class="popular-artist-div">
+                  <div class="artist-image">
+                     <div class="play-button2"><i class="fa-solid fa-play"></i></div>
+                     <img src="images/ed.jpeg">
+                  </div>
+                  <div class="artist-name"><a href="page2.html"> ED Sherran</a></div>
+               </div>
+               <div class="popular-artist-div">
+                  <div class="artist-image">
+                     <div class="play-button2"><i class="fa-solid fa-play"></i></div>
+                     <img src="images/coldplay.jpeg">
+                  </div>
+                  <div class="artist-name"><a href="page2.html"> Coldplay</a></div>
+               </div>
+               <div class="popular-artist-div">
+                  <div class="artist-image">
+                     <div class="play-button2"><i class="fa-solid fa-play"></i></div>
+                     <img src="images/bts.jpeg">
+                  </div>
+                  <div class="artist-name"><a href="page2.html"> BTS</a></div>
+               </div>
+               <div class="popular-artist-div">
+                  <div class="artist-image">
+                     <div class="play-button2"><i class="fa-solid fa-play"></i></div>
+                     <img src="images/taylor.jpeg">
+                  </div>
+                  <div class="artist-name"><a href="page2.html"> Taylor Swift</a></div>
+               </div>
+               <div class="popular-artist-div">
+                  <div class="artist-image">
+                     <div class="play-button2"><i class="fa-solid fa-play"></i></div>
+                     <img src="images/bieber.jpeg">
+                  </div>
+                  <div class="artist-name"><a href="page2.html">Justin beiber</a></div>
+               </div>
+               <div class="popular-artist-div">
+                  <div class="artist-image">
+                     <div class="play-button2"><i class="fa-solid fa-play"></i></div>
+                     <img src="images/arijit.jpeg">
+                  </div>
+                  <div class="artist-name"><a href="page2.html"> Arijit Singh </a></div>
+               </div>
+            </div>
+         </div>
+         <!-- this is the music themes part, the one with the tri-gradient background -->
+         <div class="music-themes">
+            <!-- this div will be the logo of music themes, see the output, the one with 3 squares/rects  -->
+            <!-- the logo with orange, green and yellow color -->
+            <div class="stations">
+               <div id="div1">
+                  <div id="div2">
+                     <div id="div3">
+                        <div class="stations-img"> <img class="mimg" src="images/mimage.jpeg"></div>
+                        <p>Stations</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="theme-main">
+               <div class="theme-content">
+                  <img src="images/vibe.jpeg">
+                  <p>Vibe</p>
+               </div>
+               <div class="theme-content">
+                  <img src="images/rock.jpeg">
+                  <p>Rock</p>
+               </div>
+               <div class="theme-content">
+                  <img src="images/love2.jpeg">
+                  <p>Love</p>
+               </div>
+               <div class="theme-content">
+                  <img src="images/pop.jpeg">
+                  <p>Pop</p>
+               </div>
+               <div class="theme-content">
+                  <img src="images/retro.jpeg">
+                  <p>Retro</p>
+               </div>
+               <div class="theme-content">
+                  <img src="images/gym3.jpeg">
+                  <p>GYM</p>
+               </div>
+            </div>
+         </div>
+         </div>
+         <!-- this is another themes portion, that electronic, party and road theme -->
+         <div class="music-themes-2">
+            <!-- 3 divs content -->
+            <div class="outer-div">
+               <img src="images/party.jpeg">
+               <p>Party</p>
+            </div>
+            <div class="outer-div">
+               <img src="images/electronic.jpeg">
+               <p>Electronic</p>
+            </div>
+            <div class="outer-div">
+               <img src="images/travel.jpeg">
+               <p>Travel</p>
+            </div>
+         </div>
+         <!-- div over -->
+         <!-- this div contains the language section of the page -->
+         <!-- "language class is common to both hindi and english sections" -->
+         <!-- in this way redundancy is handled. considering the re-usability of the code -->
+         <div class="language english">
+            <!-- latest english section -->
+            <h1 class="language-heading">
+               Latest English
+            </h1>
+            <!-- contents of latest english -->
+            <div class="language-content">
+               <div>
+                  <img src="images/english.jpeg">
+                  <p>I'll Wait</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/english2.jpeg">
+                  <p>Let me Go!</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/english3.jpeg">
+                  <p>Qurantine Clean</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/english6.jpeg">
+                  <p>Roar</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/english5.jpeg">
+                  <p>Toosie Slide</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/english2.jpeg">
+                  <p>Uptown Funk</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+            </div>
+         </div>
+         <!-- this is the hindi section -->
+         <div class="language hindi">
+            <!-- hindi section heading -->
+            <h1 class="language-heading">
+               Latest Hindi
+            </h1>
+            <!-- hindi section contents -->
+            <div class="language-content">
+               <div>
+                  <img src="images/rain.jpeg">
+                  <p>Baarish</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/hindi2.jpeg">
+                  <p>Galiyaan</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/hindi3.jpeg">
+                  <p>Sunshine</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/hindi4.jpeg">
+                  <p>Kaun Tujhe</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/hindi5.jpeg">
+                  <p>Tera Ban Jaunga</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+               <div>
+                  <img src="images/hindi.jpeg">
+                  <p>Tere Sang Yaara</p>
+                  <p class="date">Aug 11, 2017</p>
+               </div>
+            </div>
+         </div>
+      </aside>
+
+      
+      <label for="more"><i class="fas fa-angle-double-left"></i>More
+        
+      </label>
+      <input type="checkbox" id="more">
+      <aside class="aside section-2">
+         
+         
+         <!-- this is the section heading part. the heading will be static -->
+         <div class="heading-asidesection2">
+            <h3>Queue</h3>
+            <div style="margin-top: 5px;" id="btn-dropdown">
+               queue<i class="fas fa-chevron-circle-down"></i>
+               <div class="qbtn-options">
+                  <span>playlist</span>
+                  <br>favourite song 
+               </div>
+            </div>
+         </div>
+         <div class="queue-items">
+            <div class="qitem">
+               <span class="numspan">01</span>
+               <div class="qimage">
+                  <img src="images/magic.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Magic Shop</b>
+                  <br>Bts
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">02</span>
+               <div class="qimage">
+                  <img src="images/red.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Red</b>
+                  <br>Taylor swift
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">03</span>
+               <div class="qimage">
+                  <img src="images/perfect.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Perfect</b>
+                  <br>Ed Sherran
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">04</span>
+               <div class="qimage">
+                  <img src="images/eupho.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Euphoria</b>
+                  <br>JK
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">05</span>
+               <div class="qimage">
+                  <img src="images/red2.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Love Story</b>
+                  <br>Taylor Swift
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">06</span>
+               <div class="qimage">
+                  <img src="images/black.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Money</b>
+                  <br>BlankPink
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">07</span>
+               <div class="qimage">
+                  <img src="images/everytime.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Everytime</b>
+                  <br>Chen
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">08</span>
+               <div class="qimage">
+                  <img src="images/rain.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Rainism</b>
+                  <br>Bts
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">09</span>
+               <div class="qimage">
+                  <img src="images/nc.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Night Changes</b>
+                  <br>One Direction
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">10</span>
+               <div class="qimage">
+                  <img src="images/onw.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>On My Way</b>
+                  <br>Alan Walker
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">11</span>
+               <div class="qimage">
+                  <img src="images/idol.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Idol</b>
+                  <br>Bts
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">12</span>
+               <div class="qimage">
+                  <img src="images/cardigan.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Cardigan</b>
+                  <br>Taylor Swift
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">13</span>
+               <div class="qimage">
+                  <img src="images/magic.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Magic Shop</b>
+                  <br>Bts
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+            <div class="qitem">
+               <span class="numspan">14</span>
+               <div class="qimage">
+                  <img src="images/magic.jpeg">
+               </div>
+               <div class="qtext">
+                  <b>Magic Shop</b>
+                  <br>Bts
+               </div>
+               <div class="qbtn">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
+            </div>
+         </div>
+      </aside>
+      </main>
+
+      <!-- footer section -->
+      <footer>
+
+    <!-- Active Song -->
+    <div class="song-desc">
+      <!-- Song Image -->
+      <div class="song-img">
+      </div>
+      
+      <!-- Artist and song name -->
+      <div class="song-and-artist-name">
+        <p>Red</p>
+        <p>Taylor Swift</p>
+      </div>
+
+      <!-- Like and ban icon -->
+      <div class="like-and-ban">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-ban"></i>
+      </div>
+
+    </div>
+
+    <!-- Music Controls: Controls; Slider; Time -->
+    <div class="song-controls"> 
+
+      <div class="controls">
+        <!-- Shuffle -->
+        <i class="fa-solid fa-shuffle"></i>
+        <!-- Backward -->
+        <i class="fa-solid fa-backward"></i>
+        <!-- Pause/Play -->
+        <i class="fa-solid fa-circle-pause"></i>
+        <!-- Forward -->
+        <i class="fa-solid fa-forward"></i> 
+        <!-- Repeat -->
+        <i class="fa-solid fa-repeat"></i>
+
+      </div>
+
+      <!-- Song Duration Slider with played and remaining time-->
+      <div class="slider-controls">
+        <div class="played-time">
+          <p>1.11</p>
+
+        </div>
+
+        <div class="slider-wrapper">
+          <input type="range" class="slider">
+        </div>
+
+        <div class="total-time">
+          <p>4.44</p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- Other Controls -->
+    <div class="other-controls">
+
+      <!-- Playlist icon -->
+      <div class="playlist-icon">
+        <i class="fa-solid fa-list-ul"></i>
+
+      </div>
+
+      <!-- Remote Connect -->
+      <div class="connect-pc">
+        <i class="fa-solid fa-laptop"></i>
+
+      </div>
+
+      <!-- Vol icon -->
+      <div class="vol-icon">
+        <i class="fa-solid fa-volume-high"></i>
+
+      </div>
+
+      <!-- Vol slider -->
+      <div class="vol-slider-wrapper">
+        <input type="range" class="vol-slider">
+
+      </div>
+
+      <!-- Full screen icon -->
+      <div class="full-screen">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   </body>
+   <script src="script.js"></script>
+</html>

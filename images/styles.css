@@ -1,0 +1,320 @@
+:root {
+  --background-image: url(pic.jpeg);
+  --music-themes-background-image: linear-gradient(
+    90deg,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  );
+}
+
+body {
+  background-color: #151b54;
+
+  margin: 0px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
+}
+/* top navigation bar */
+.navigation-bar {
+  height: auto;
+  width: auto;
+  background-image: linear-gradient(180deg, blue, rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: all ease-in-out 1s; /* when the navbar loads, every property transits for 1s */
+}
+/* all the divs inside the navigation bar should be placed side by side*/
+.navigation-bar > div {
+  display: inline-block;
+}
+/* animation for the website logo */
+
+}
+/* animation for the website logo */
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* website logo image */
+.website-logo img {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	animation-name: rotating;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+/* website function */
+.website-name h4 {
+	color: rgb(80, 220, 255);
+}
+/* website title and general description */
+.title-combo > div {
+	vertical-align: middle;
+	display: inline-block;
+}
+/* animation for favoutites text */
+
+/* favourites text */
+.favs {
+  margin: 6px;
+}
+/* search bar */
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+/* search icon for input bar */
+.search-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* mic icon for input */
+.mic-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+	outline: none;
+}
+/* animation for bell image */
+@keyframes ringing_bell {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+/* notification bell image */
+.notification-bell img {
+	width: 40px;
+	height: 30px;
+	animation-name: ringing_bell;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 10s;
+	position: first;
+}
+/* profile picture of the user */
+.profile-picture img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+/* navigation bar is completed here */
+
+/* main */
+main {
+	width: 100%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+}
+.aside {
+	display: inline-block;
+	overflow: hidden;
+}
+.section-1 {
+	width: 70%;
+	height: 86vh;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+/* overflow should be scrollable but the scroll bar should be hidden*/
+.section-1::-webkit-scrollbar {
+	display: none;
+}
+/* section 2 of the main part */
+.section-2 {
+	width: 28%;
+  height: 86vh;
+  border:1px solid black;
+}
+/* aside section 1 */
+.outer-carousel {
+	position: relative;
+	left: 8vw;
+	margin-top: 5%;
+	transition: all ease-in-out 1s;
+}
+/* carousel */
+.carousel {
+	position: absolute;
+	left: 4%;
+	width: 70%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	justify-content: space-around;
+}
+/* general properties for images in the carousel */
+.carousel img {
+	height: 15vw;
+	width: 22.5vw;
+	transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+/* first image in the carousel */
+/* if you see it direction wise, then it is the third image in the carousel */
+.carousel img:nth-child(1) {
+	position: relative;
+	left: 41vw;
+	z-index: 2;
+}
+/* image which is in the maddle of the carousel */
+.carousel img:nth-child(2) {
+	z-index: 3;
+}
+/* third image in the carousel */
+/* if you see it direction wise, then it is the first image in the carousel */
+.carousel img:nth-child(3) {
+	position: relative;
+	right: 41vw;
+	z-index: 1;
+}
+
+/* animations for carousel */
+
+.carousel img:hover {
+	z-index: 4;
+	box-shadow: 0px 0px 12px 0.1px black;
+	height: 18vw;
+	width: 27vw;
+}
+
+/* latest release */
+
+.latest-release {
+	position: relative;
+	top: 20vw;
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+/* container of the latest release part should be of type flex */
+.latest-release-content {
+  border:1px solid black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/* all the components of the latest release part */
+.latest-release-content > div {
+  /*  border:1px solid white; */
+  border: 1px solid black;
+	height: auto;
+	width: 50%;
+	margin: 5px 0px;
+}
+.box{
+  padding: 2px;
+  padding-bottom: 2px;
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+  display: flex;
+
+  flex-direction: row;
+  justify-content:space-between;
+}
+.box-img{
+  position:relative;
+  flex-direction:row;
+  height:90%;
+  width:40%;
+}
+.box-img img{
+  flex-direction:row;
+  height:100%;
+  width: 100%;
+  margin: 0px;
+}
+.description{
+	height: 100%;
+	width:40%;
+  position: relative;
+  flex-direction:row;
+  
+}
+.options-button{
+  height:100%;
+  width:auto;
+  position: relative;
+}
+.latest-release-dropdown{
+	display:none;
+	
+}
+.options i{
+position:absolute;
+right:0px;
+}
+.timing{
+	top:25px;
+	position: relative;;
+}
+.options:hover .latest-release-dropdown{
+	background-color:burlywood;
+  position: absolute;
+  border:1px solid black;
+  display:block;
+  height:auto;
+	width: auto;
+	right:20%;
+}
+
+
+/* popular artist section */
+.popular-artists{
+  position: relative;
+}
